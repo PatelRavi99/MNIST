@@ -62,8 +62,8 @@ namespace MNIST
             byte[] magicNum2 = binLabels.ReadBytes(4);
             byte[] numLabels = binLabels.ReadBytes(4);
 
-            trainingIamges = new Matrix[60000];
-            trainingLables = new Matrix[60000];
+            trainingIamges = new Matrix[10000];
+            trainingLables = new Matrix[10000];
 
             for (int i = 0; i < 60000; i++)
             {

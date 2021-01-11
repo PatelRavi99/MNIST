@@ -138,8 +138,8 @@ namespace MNIST
 
         public void TrainNetwork(Matrix[] TrainingImages, Matrix[] TrainingLabels)
         {
-            double alpha = 0.6;
-            double eta = 0.3;
+            double alpha = 0.9;
+            double eta = 0.1;
             double decay = 0.01;
 
             int epochs = 75;
@@ -151,7 +151,7 @@ namespace MNIST
 
             for (int i = 0; i < epochs; i++)
             {
-                //alpha /= (1 + i * alpha);
+                //eta /= (1 + i * decay);
                 for (int j = 0; j < 60000; j++)
                 {
                     Matrix output;
